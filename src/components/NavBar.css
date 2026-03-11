@@ -1,0 +1,108 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    height: 64px;
+    background-color: var(--color-bg-alt);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.logo polygon {
+    fill: none;
+    stroke: var(--color-accent);
+    stroke-width: 3;
+    stroke-linejoin: round;
+}
+
+.logo line {
+    stroke: var(--color-accent);
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.navbar-title {
+    font-size: 1.2rem;
+    color: var(--color-fg-strong);
+    white-space: nowrap;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 0.25rem;
+    list-style: none;
+}
+
+.navbar-links a {
+    display: block;
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    color: var(--color-fg);
+    transition: color 0.15s, background-color 0.15s;
+}
+
+.navbar-links a:hover {
+    color: var(--color-fg-strong);
+    background-color: var(--color-selection);
+}
+
+.navbar-hamburger {
+    display: none;
+    color: var(--color-fg);
+    padding: 0.25rem;
+    border-radius: 4px;
+    transition: color 0.15s, background-color 0.15s;
+}
+
+.navbar-hamburger:hover {
+    color: var(--color-fg-strong);
+    background-color: var(--color-selection);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 64px;
+        padding: 0 1rem;
+    }
+
+    .navbar-hamburger {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 0.75rem;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .navbar-links a {
+        padding: 0.75rem 0.5rem;
+        border-radius: 0;
+        border-top: 1px solid var(--color-gutter);
+    }
+}
