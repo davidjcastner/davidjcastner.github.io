@@ -3,6 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const sharp = require('sharp');
+
+const IMAGE_PATTERN = /\.(jpg|jpeg|png)$/i;
+const LOSSLESS_PATTERN = /\.lossless\.(jpg|jpeg|png)$/i;
 
 module.exports = (env, argv) => {
   const isProd = argv.mode === 'production';
@@ -42,7 +46,25 @@ module.exports = (env, argv) => {
       }),
       new CopyWebpackPlugin({
         patterns: [
-          { from: 'src/assets', to: 'assets' },
+          {
+            from: 'src/assets/images/**/*.{jpg,jpeg,png}',
+            to({ absoluteFilename }) {
+              const relative = path.relative(
+                path.resolve(__dirname, 'src/assets/images'),
+                absoluteFilename,
+              );
+              return path.join('assets/images', relative)
+                .replace(LOSSLESS_PATTERN, '.webp')
+                .replace(IMAGE_PATTERN, '.webp');
+            },
+            transform: async (content, absoluteFrom) => {
+              const options = LOSSLESS_PATTERN.test(absoluteFrom)
+                ? { lossless: true }
+                : { quality: 85 };
+              return sharp(content).webp(options).toBuffer();
+            },
+          },
+          { from: 'src/assets/files', to: 'assets/files' },
         ],
       }),
     ],
