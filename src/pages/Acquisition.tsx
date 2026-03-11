@@ -5,7 +5,7 @@ const Acquisition: React.FC = () => {
     return (
         <div className='acquisition'>
             <header className='acquisition-section'>
-                <h2><span className='acquisition-prompt'>$</span> cat opportunity.txt</h2>
+                <h2><span className='acquisition-prompt'>&gt;</span> cat opportunity.txt</h2>
                 <h1>Acquiring Top Talent</h1>
                 <p className='acquisition-intro'>
                     I'm a software engineer and artist with experience building scalable web
