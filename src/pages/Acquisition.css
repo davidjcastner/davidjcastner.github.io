@@ -1,0 +1,122 @@
+.acquisition {
+    padding: 3rem 0 4rem;
+    max-width: 720px;
+}
+
+/* Header */
+
+.acquisition-label {
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.95rem;
+    color: var(--color-comment);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.acquisition-intro {
+    color: var(--color-fg);
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Sections */
+.acquisition-section {
+    margin-bottom: 2.5rem;
+}
+
+.acquisition-section h2 {
+    font-size: 1.1rem;
+    font-family: 'Inconsolata', monospace;
+    color: var(--color-fg-subtle);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.acquisition-prompt {
+    color: var(--color-green);
+}
+
+/* Services list */
+.acquisition-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.acquisition-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    color: var(--color-fg);
+    line-height: 1.5;
+}
+
+.tag {
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.85rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.tag--blue {
+    color: var(--color-blue);
+    background-color: color-mix(in srgb, var(--color-blue) 15%, transparent);
+}
+
+.tag--purple {
+    color: var(--color-purple);
+    background-color: color-mix(in srgb, var(--color-purple) 15%, transparent);
+}
+
+.tag--green {
+    color: var(--color-green);
+    background-color: color-mix(in srgb, var(--color-green) 15%, transparent);
+}
+
+.tag--cyan {
+    color: var(--color-cyan);
+    background-color: color-mix(in srgb, var(--color-cyan) 15%, transparent);
+}
+
+/* Contact link */
+.acquisition-link {
+    color: var(--color-accent);
+}
+
+.acquisition-link:hover {
+    color: var(--color-cyan);
+}
+
+/* Download button */
+.acquisition-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    color: var(--color-fg);
+    background-color: var(--color-bg-highlight);
+    font-size: 0.95rem;
+    transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+}
+
+.acquisition-download:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    background-color: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
+
+.acquisition-download .material-icons {
+    font-size: 1.1rem;
+}
+
+.acquisition-resume-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
