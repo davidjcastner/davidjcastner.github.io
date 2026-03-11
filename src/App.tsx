@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import './App.css';
 import About from './pages/About';
@@ -22,6 +23,7 @@ const App: React.FC = () => {
                         <Route path='/acquisition' element={<Acquisition />} />
                     </Routes>
                 </main>
+                <Footer />
             </div>
         </HashRouter>
     );
