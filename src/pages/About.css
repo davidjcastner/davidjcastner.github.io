@@ -1,0 +1,35 @@
+.about {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.about-heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--color-fg);
+}
+
+.about p {
+    color: var(--color-fg);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+.about p:last-child {
+    margin-bottom: 0;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0 1.5rem;
+    display: block;
+    filter: brightness(0.8) saturate(0.7) hue-rotate(5deg);
+    transition: filter 0.3s;
+}
+
+.about-img:hover {
+    filter: brightness(0.95) saturate(0.9);
+}

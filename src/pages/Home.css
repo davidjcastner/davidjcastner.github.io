@@ -66,16 +66,57 @@
 .terminal-output--green  { color: var(--color-green);  }
 
 .terminal-hire {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
     font-family: 'Inconsolata', monospace;
     font-size: 1rem;
-    color: var(--color-fg);
+    font-weight: 500;
     display: inline-block;
-    transition: color 0.15s;
+    padding: 0.6rem 1.5rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 4px;
+    color: var(--color-accent);
+    transition: background-color 0.15s, color 0.15s;
 }
 
 .terminal-hire:hover {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+}
+
+/* About section */
+.home-about {
+    padding: 4rem 0;
+    border-top: 1px solid var(--color-bg-highlight);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.home-about-heading {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+    color: var(--color-fg);
+}
+
+.home-about-body {
+    color: var(--color-fg);
+    line-height: 1.75;
+    margin-bottom: 2rem;
+}
+
+.home-about-btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 4px;
     color: var(--color-accent);
+    font-weight: 500;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.home-about-btn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
 }
 
 @media (max-width: 768px) {
