@@ -1,0 +1,97 @@
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-portrait {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Terminal window */
+.terminal {
+    background-color: var(--color-bg-alt);
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 380px;
+    max-width: 500px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-titlebar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+    padding: 10px 14px;
+    background-color: var(--color-bg-highlight);
+}
+
+.terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.terminal-dot--red    { background-color: var(--color-red); }
+.terminal-dot--yellow { background-color: var(--color-yellow); }
+.terminal-dot--green  { background-color: var(--color-green); }
+
+.terminal-body {
+    padding: 1.5rem 1.75rem 1.75rem;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.terminal-prompt {
+    color: var(--color-comment);
+    font-size: 1rem;
+}
+
+.terminal-output {
+    font-size: 1.05rem;
+    margin-bottom: 0.6rem;
+}
+
+.terminal-output--cyan   { color: var(--color-cyan);   font-size: 1.8rem; line-height: 1.2; margin-bottom: 0.75rem; }
+.terminal-output--purple { color: var(--color-purple); }
+.terminal-output--green  { color: var(--color-green);  }
+
+.terminal-hire {
+    margin-top: 0.75rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    color: var(--color-fg);
+    display: inline-block;
+    transition: color 0.15s;
+}
+
+.terminal-hire:hover {
+    color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+
+    .hero-portrait {
+        width: 200px;
+        height: 200px;
+    }
+
+    .terminal {
+        min-width: unset;
+        width: 100%;
+    }
+}
