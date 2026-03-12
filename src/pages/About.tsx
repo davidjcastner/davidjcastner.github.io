@@ -7,7 +7,7 @@ const About: React.FC = () => {
             <h1 className='about-heading'>About Me</h1>
             <img
                 className='about-img'
-                src='assets/images/about_me_01.webp'
+                src='assets/about_me_01.webp'
                 alt='David Castner'
             />
             <p>
@@ -34,7 +34,7 @@ const About: React.FC = () => {
             </p>
             <img
                 className='about-img'
-                src='assets/images/about_me_02.webp'
+                src='assets/about_me_02.webp'
                 alt='David Castner'
             />
             <p>
