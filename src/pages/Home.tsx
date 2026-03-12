@@ -8,7 +8,7 @@ const Home: React.FC = () => {
             <section className='hero'>
                 <img
                     className='hero-portrait'
-                    src='assets/images/portrait_abstract_sq.webp'
+                    src='assets/portrait_abstract_sq.webp'
                     alt='David Castner'
                 />
                 <div className='terminal'>

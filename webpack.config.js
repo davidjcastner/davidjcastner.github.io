@@ -47,13 +47,13 @@ module.exports = (env, argv) => {
       new CopyWebpackPlugin({
         patterns: [
           {
-            from: 'src/assets/images/**/*.{jpg,jpeg,png}',
+            from: 'src/assets/**/*.{jpg,jpeg,png}',
             to({ absoluteFilename }) {
               const relative = path.relative(
-                path.resolve(__dirname, 'src/assets/images'),
+                path.resolve(__dirname, 'src/assets'),
                 absoluteFilename,
               );
-              return path.join('assets/images', relative)
+              return path.join('assets', relative)
                 .replace(LOSSLESS_PATTERN, '.webp')
                 .replace(IMAGE_PATTERN, '.webp');
             },
@@ -64,7 +64,6 @@ module.exports = (env, argv) => {
               return sharp(content).webp(options).toBuffer();
             },
           },
-          { from: 'src/assets/files', to: 'assets/files' },
         ],
       }),
     ],
