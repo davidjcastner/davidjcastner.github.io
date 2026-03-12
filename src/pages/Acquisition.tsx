@@ -46,7 +46,9 @@ const Acquisition: React.FC = () => {
                         View Resume
                     </a>
                     <a
-                        href='assets/files/David_Castner_Resume.pdf'
+                        href='https://davidjcastner.github.io/resume/David_Castner_Resume.pdf'
+                        target='_blank'
+                        rel='noopener noreferrer'
                         download
                         className='acquisition-download'
                     >
