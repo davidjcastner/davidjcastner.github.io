@@ -50,6 +50,30 @@ const Home: React.FC = () => {
                     Read More
                 </Link>
             </section>
+            <section className="home-highlights">
+                <div className="home-highlight-card">
+                    <span className="material-icons home-highlight-icon">code</span>
+                    <h2 className="home-highlight-heading">Coding</h2>
+                    <p className="home-highlight-body">
+                        A collection of personal projects spanning algorithms, game development,
+                        tooling, and AI, each one born from curiosity.
+                    </p>
+                    <Link to="/coding" className="home-about-btn">
+                        View Projects
+                    </Link>
+                </div>
+                <div className="home-highlight-card">
+                    <span className="material-icons home-highlight-icon">palette</span>
+                    <h2 className="home-highlight-heading">Art</h2>
+                    <p className="home-highlight-body">
+                        Dragons, digital painting, and 3D art is how I bring the impossible
+                        to life outside of the editor.
+                    </p>
+                    <Link to="/art" className="home-about-btn">
+                        View Gallery
+                    </Link>
+                </div>
+            </section>
         </>
     );
 };
