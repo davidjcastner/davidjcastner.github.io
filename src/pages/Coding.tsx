@@ -7,14 +7,21 @@ const projects = [
         description:
             "A colleague posed an interesting math puzzle: a farmer's will divides 17 horses among 3 heirs using fractions (1/2, 1/3, 1/9) that don't evenly divide — until a neighbor temporarily adds one horse, making 18. Each heir takes their share (9, 6, 2), and the neighbor reclaims the last horse. This Jupyter notebook proves out every valid combination of horses and fractional heirs where this trick works.",
         tags: ['Python', 'Math'],
-        links: [{ label: 'View Project', href: 'https://davidjcastner.github.io/inheritance-problem/' }],
+        links: [
+            { label: 'View Project', href: 'https://davidjcastner.github.io/inheritance-problem/' },
+        ],
     },
     {
         title: 'Shut The Box',
         description:
             'A colleague asked what the optimal strategy was for Shut the Box — a dice game where you flip down tiles (1–9) that sum to each roll, aiming to clear the board. With only 512 possible board states and 36 dice outcomes, this Jupyter notebook uses dynamic programming and backward induction to exhaustively compute the expected score for every state. It compares the optimal strategy against a human-intuitive "flip highest tiles first" approach, finding the two are nearly identical with negligible differences.',
         tags: ['Python', 'Math'],
-        links: [{ label: 'View Project', href: 'https://github.com/davidjcastner/shut-the-box/blob/main/shut_the_box.ipynb' }],
+        links: [
+            {
+                label: 'View Project',
+                href: 'https://github.com/davidjcastner/shut-the-box/blob/main/shut_the_box.ipynb',
+            },
+        ],
     },
     {
         title: 'Wordle App and Solver',
@@ -38,7 +45,12 @@ const projects = [
         description:
             'Factorio is one of my all-time favorite games, a factory-building automation game where optimizing throughput is half the fun. I enjoyed it so much that I decided to learn Lua, build my own mod, and publish it to the Factorio mod portal. The mod adds item and fluid compression to push more material through belts and trains, and joining the modding community around it was just as rewarding as building the factory itself.',
         tags: ['Lua', 'Mod'],
-        links: [{ label: 'View Project', href: 'https://github.com/davidjcastner/factorio-compression-mod' }],
+        links: [
+            {
+                label: 'View Project',
+                href: 'https://github.com/davidjcastner/factorio-compression-mod',
+            },
+        ],
     },
     {
         title: 'NPM Router',
@@ -51,49 +63,49 @@ const projects = [
 
 const Coding: React.FC = () => {
     return (
-        <div className='coding-page'>
-            <h1 className='coding-heading'>Coding Projects</h1>
-            <p className='coding-intro'>
-                A collection of personal projects spanning game development, algorithms, tooling, and
-                AI. Each one started as curiosity and turned into something I'm proud of.
+        <div className="coding-page">
+            <h1 className="coding-heading">Coding Projects</h1>
+            <p className="coding-intro">
+                A collection of personal projects spanning game development, algorithms, tooling,
+                and AI. Each one started as curiosity and turned into something I'm proud of.
             </p>
-            <p className='coding-footer-note'>
+            <p className="coding-footer-note">
                 This page highlights a selection of my personal projects. More can be found on my{' '}
                 <a
-                    href='https://github.com/davidjcastner?tab=repositories'
-                    target='_blank'
-                    rel='noreferrer'
+                    href="https://github.com/davidjcastner?tab=repositories"
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     GitHub
                 </a>
                 .
             </p>
-            <div className='coding-grid'>
+            <div className="coding-grid">
                 {projects.map((project) => (
-                    <div key={project.title} className='coding-card'>
-                        <div className='coding-card-header'>
-                            <span className='material-icons coding-card-icon'>code</span>
-                            <h2 className='coding-card-title'>{project.title}</h2>
+                    <div key={project.title} className="coding-card">
+                        <div className="coding-card-header">
+                            <span className="material-icons coding-card-icon">code</span>
+                            <h2 className="coding-card-title">{project.title}</h2>
                         </div>
-                        <p className='coding-card-desc'>{project.description}</p>
-                        <div className='coding-card-footer'>
-                            <div className='coding-tags'>
+                        <p className="coding-card-desc">{project.description}</p>
+                        <div className="coding-card-footer">
+                            <div className="coding-tags">
                                 {project.tags.map((tag) => (
-                                    <span key={tag} className='coding-tag'>
+                                    <span key={tag} className="coding-tag">
                                         {tag}
                                     </span>
                                 ))}
                             </div>
-                            <div className='coding-card-links'>
+                            <div className="coding-card-links">
                                 {project.links.map((link) => (
                                     <a
                                         key={link.label}
                                         href={link.href}
-                                        target='_blank'
-                                        rel='noreferrer'
-                                        className='coding-btn'
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="coding-btn"
                                     >
-                                        <span className='material-icons'>open_in_new</span>
+                                        <span className="material-icons">open_in_new</span>
                                         {link.label}
                                     </a>
                                 ))}

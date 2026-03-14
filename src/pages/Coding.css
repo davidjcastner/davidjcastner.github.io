@@ -109,7 +109,10 @@
     background-color: var(--color-bg-highlight);
     font-size: 0.9rem;
     white-space: nowrap;
-    transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+    transition:
+        border-color 0.15s,
+        color 0.15s,
+        background-color 0.15s;
 }
 
 .coding-btn:hover {

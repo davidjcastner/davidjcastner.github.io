@@ -66,8 +66,8 @@ const Home: React.FC = () => {
                     <span className="material-icons home-highlight-icon">palette</span>
                     <h2 className="home-highlight-heading">Art</h2>
                     <p className="home-highlight-body">
-                        Dragons, digital painting, and 3D art is how I bring the impossible
-                        to life outside of the editor.
+                        Dragons, digital painting, and 3D art is how I bring the impossible to life
+                        outside of the editor.
                     </p>
                     <Link to="/art" className="home-about-btn">
                         View Gallery
