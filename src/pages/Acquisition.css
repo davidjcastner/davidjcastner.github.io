@@ -102,7 +102,10 @@
     color: var(--color-fg);
     background-color: var(--color-bg-highlight);
     font-size: 0.95rem;
-    transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+    transition:
+        border-color 0.15s,
+        color 0.15s,
+        background-color 0.15s;
 }
 
 .acquisition-download:hover {

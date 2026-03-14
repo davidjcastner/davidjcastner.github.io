@@ -1,5 +1,7 @@
 /* Box sizing */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -25,23 +27,36 @@ body {
 }
 
 /* Remove list styles */
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
 /* Images and media */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
     display: block;
     max-width: 100%;
 }
 
 /* Form elements inherit font */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     font: inherit;
 }
 
 /* Headings inherit font weight and allow text overflow wrap */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: inherit;
     overflow-wrap: break-word;
 }

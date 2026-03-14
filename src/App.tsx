@@ -12,15 +12,15 @@ import Home from './pages/Home';
 const App: React.FC = () => {
     return (
         <HashRouter>
-            <div className='app'>
+            <div className="app">
                 <NavBar />
-                <main className='app-content'>
+                <main className="app-content">
                     <Routes>
-                        <Route path='/' element={<Home />} />
-                        <Route path='/about' element={<About />} />
-                        <Route path='/coding' element={<Coding />} />
-                        <Route path='/art' element={<Art />} />
-                        <Route path='/acquisition' element={<Acquisition />} />
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/coding" element={<Coding />} />
+                        <Route path="/art" element={<Art />} />
+                        <Route path="/acquisition" element={<Acquisition />} />
                     </Routes>
                 </main>
                 <Footer />
