@@ -39,9 +39,15 @@
     border-radius: 50%;
 }
 
-.terminal-dot--red    { background-color: var(--color-red); }
-.terminal-dot--yellow { background-color: var(--color-yellow); }
-.terminal-dot--green  { background-color: var(--color-green); }
+.terminal-dot--red {
+    background-color: var(--color-red);
+}
+.terminal-dot--yellow {
+    background-color: var(--color-yellow);
+}
+.terminal-dot--green {
+    background-color: var(--color-green);
+}
 
 .terminal-body {
     padding: 1.5rem 1.75rem 1.75rem;
@@ -61,9 +67,18 @@
     margin-bottom: 0.6rem;
 }
 
-.terminal-output--cyan   { color: var(--color-cyan);   font-size: 1.8rem; line-height: 1.2; margin-bottom: 0.75rem; }
-.terminal-output--purple { color: var(--color-purple); }
-.terminal-output--green  { color: var(--color-green);  }
+.terminal-output--cyan {
+    color: var(--color-cyan);
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+}
+.terminal-output--purple {
+    color: var(--color-purple);
+}
+.terminal-output--green {
+    color: var(--color-green);
+}
 
 .terminal-hire {
     margin-top: 1rem;
@@ -75,7 +90,9 @@
     border: 2px solid var(--color-accent);
     border-radius: 4px;
     color: var(--color-accent);
-    transition: background-color 0.15s, color 0.15s;
+    transition:
+        background-color 0.15s,
+        color 0.15s;
 }
 
 .terminal-hire:hover {
@@ -111,7 +128,9 @@
     border-radius: 4px;
     color: var(--color-accent);
     font-weight: 500;
-    transition: background-color 0.15s, color 0.15s;
+    transition:
+        background-color 0.15s,
+        color 0.15s;
 }
 
 .home-about-btn:hover {

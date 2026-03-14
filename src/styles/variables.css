@@ -1,33 +1,33 @@
 /* Atom One Dark Theme Colors */
 :root {
     /* Base colors */
-    --color-bg:           #282c34;
-    --color-bg-alt:       #21252b;
+    --color-bg: #282c34;
+    --color-bg-alt: #21252b;
     --color-bg-highlight: #2c313c;
-    --color-selection:    #3e4451;
-    --color-gutter:       #4b5263;
-    --color-comment:      #5c6370;
-    --color-fg-subtle:    #636d83;
-    --color-fg:           #abb2bf;
-    --color-fg-strong:    #c8ccd4;
+    --color-selection: #3e4451;
+    --color-gutter: #4b5263;
+    --color-comment: #5c6370;
+    --color-fg-subtle: #636d83;
+    --color-fg: #abb2bf;
+    --color-fg-strong: #c8ccd4;
 
     /* Syntax colors */
-    --color-red:          #e06c75;
-    --color-red-dark:     #be5046;
-    --color-orange:       #d19a66;
-    --color-yellow:       #e5c07b;
-    --color-green:        #98c379;
-    --color-cyan:         #56b6c2;
-    --color-blue:         #61afef;
-    --color-purple:       #c678dd;
+    --color-red: #e06c75;
+    --color-red-dark: #be5046;
+    --color-orange: #d19a66;
+    --color-yellow: #e5c07b;
+    --color-green: #98c379;
+    --color-cyan: #56b6c2;
+    --color-blue: #61afef;
+    --color-purple: #c678dd;
 
     /* UI accent mappings */
-    --color-accent:       var(--color-blue);
-    --color-warning:      var(--color-yellow);
-    --color-error:        var(--color-red);
-    --color-success:      var(--color-green);
-    --color-info:         var(--color-cyan);
+    --color-accent: var(--color-blue);
+    --color-warning: var(--color-yellow);
+    --color-error: var(--color-red);
+    --color-success: var(--color-green);
+    --color-info: var(--color-cyan);
 
     /* Border */
-    --color-border:       var(--color-gutter);
+    --color-border: var(--color-gutter);
 }

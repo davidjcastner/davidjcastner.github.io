@@ -55,7 +55,9 @@
     padding: 0.4rem 0.75rem;
     border-radius: 4px;
     color: var(--color-fg);
-    transition: color 0.15s, background-color 0.15s;
+    transition:
+        color 0.15s,
+        background-color 0.15s;
 }
 
 .navbar-links a:hover {
@@ -68,7 +70,9 @@
     color: var(--color-fg);
     padding: 0.25rem;
     border-radius: 4px;
-    transition: color 0.15s, background-color 0.15s;
+    transition:
+        color 0.15s,
+        background-color 0.15s;
 }
 
 .navbar-hamburger:hover {

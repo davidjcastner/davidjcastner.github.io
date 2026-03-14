@@ -50,7 +50,10 @@
     object-fit: cover;
     display: block;
     filter: blur(0.4px) contrast(0.97);
-    transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease,
+        filter 0.2s ease;
 }
 
 .art-thumb:hover img {
